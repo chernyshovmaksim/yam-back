@@ -27,25 +27,28 @@
     </section>
 
     <!-- Категории -->
-    @if (count($advantages) > 0)
-        <section class="categories">
-            <div class="container">
-                <h2 class="mt-4 text-2xl font-bold">Доставка цветов в Оренбурге</h2>
-            </div>
-            <div class="container mt-2">
-                <!-- Slider main container -->
-                <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper items-stretch">
-                        <!-- Slides -->
-                        @foreach ($advantages as $item)
-                            @include('parts.advantage-card', ['item', $item])
-                        @endforeach
+    @isset($advantages)
+        @if (count($advantages) > 0)
+            <section class="categories">
+                <div class="container">
+                    <h2 class="mt-4 text-2xl font-bold">Доставка цветов в Оренбурге</h2>
+                </div>
+                <div class="container mt-2">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper items-stretch">
+                            <!-- Slides -->
+                            @foreach ($advantages as $item)
+                                @include('parts.advantage-card', ['item', $item])
+                            @endforeach
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    @endif
+            </section>
+        @endif
+    @endisset
+
 
     <!-- Продукты -->
     <section class="products mt-8">

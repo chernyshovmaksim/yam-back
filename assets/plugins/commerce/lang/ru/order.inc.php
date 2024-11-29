@@ -11,7 +11,7 @@ return [
     'order.error.email_required' => 'Введите email',
     'order.error.email_incorrect' => 'Введите email правильно',
     'order.error.phone_required' => 'Введите телефон',
-    'order.success' => '@CODE:<div>Спасибо за ваш заказ</div>',
+    'order.success' => '@CODE:<div class="text-center my-2 text-xs">Спасибо за ваш заказ</div>',
     'order.subject' => '@CODE:Новый заказ на сайте [(site_name)]',
     'order.subject_status_changed' => '@CODE:Статус заказа #[+order.id+] изменен',
     'order.order_paid' => '@CODE:Поступила оплата в размере [+amount+]',

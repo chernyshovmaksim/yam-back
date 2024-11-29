@@ -37,10 +37,10 @@ class CallbackController
 
         $text = 'Клиент ' . $data['name'] . ' просит вас перезвонить ему по номеру: ' . $data['phoneInput'];
 
-        $token = env('TELEGRAM_TOKEN');
+        $token = '7201176597:AAE0x9eipaFYpl0RqUJkMwL5lw4o9P8Fphs';
 
         $getQuery = array(
-            "chat_id"     => env('TELEGRAM_CHAT_ID'),
+            "chat_id"     => '-1002266527014',
             "text"      => $text,
             "parse_mode" => "html"
         );
