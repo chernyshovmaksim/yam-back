@@ -20,7 +20,7 @@ class HomeController extends BaseController
             'prepare' => ['EvolutionCMS\Main\Controllers\HomeController::getThumbAdvantage']
         ]);
 
-        return json_decode($advantages);
+        return json_decode($advantages, true);
     }
 
     public function getNewProducts()
