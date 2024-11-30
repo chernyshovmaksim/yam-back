@@ -14,7 +14,7 @@
                 class="h-10 w-10 object-cover" alt="" />
         </a>
         <a href="{{ $data['url'] }}" class="text-xs text-pink-600 underline">{{ $data['pagetitle'] }}</a>
-        <form action="#" data-commerce-action="add" data-instance="products">
+        <form class="ml-auto" action="#" data-commerce-action="add" data-instance="products">
             <input type="hidden" name="id" value="{{ $data['id'] }}">
             <input type="hidden" name="count" value="1">
             <button type="submit"

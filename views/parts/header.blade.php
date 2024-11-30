@@ -2,9 +2,9 @@
     <div class="container mx-auto flex items-center">
         <!-- Логотип -->
         <a href="/" class="logo flex flex-col items-start justify-center">
-            <span class="font-black uppercase">Я&ТЫ</span>
+            <span class="font-black uppercase">{{ evo()->getConfig('client_logo') }}</span>
             <span class="-mt-1 text-[8px] uppercase text-pink-600">
-                Студия флористики
+                {{ evo()->getConfig('client_after_logo') }}
             </span>
         </a>
         <!-- Контакты -->
@@ -22,7 +22,8 @@
             </div>
             <div class="-mt-2 flex items-center gap-1">
                 <i data-feather="phone-call" width="12px"></i>
-                <a href="tel://+79999999999">Тел:. +7 (999) 999-99-99</a>
+                <a href="tel://{{ evo()->getConfig('client_phone_raw') }}">Тел:.
+                    {{ evo()->getConfig('client_phone_display') }}</a>
             </div>
         </div>
 

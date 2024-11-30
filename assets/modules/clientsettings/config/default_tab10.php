@@ -12,9 +12,18 @@ return array (
       'elements' => '',
       'default_text' => '',
     ),
-    'phone' => 
+    'phone_raw' => 
     array (
-      'caption' => 'Номер телефона',
+      'caption' => 'Телефон для внутренней части ссылки',
+      'type' => 'text',
+      'note' => '',
+      'elements' => '',
+      'default_text' => '',
+    ),
+    'phone_display' => 
+    array (
+      'caption' => 'Телефон для внешней части ссылки',
+      'type' => 'text',
       'note' => '',
       'elements' => '',
       'default_text' => '',
