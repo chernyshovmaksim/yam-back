@@ -13,6 +13,7 @@ class OrderController extends BaseController
             'templatePath' => 'views/',
             'submitLimit' => 0,
             'protectSubmit' => 0,
+            'redirectTo' => 1,
             'rules' => [
                 'name' => [
                     'required' => 'Поле имя обязательно для заполнения',
